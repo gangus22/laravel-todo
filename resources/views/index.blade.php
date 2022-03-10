@@ -27,11 +27,12 @@
 @section('list')
 
     <!--  -->
-    @if(($todos->count()) == 0)
-        You have no tasks.
-        Add some and get productive!
-    @endif
+
     @if(is_array($todos) || is_object($todos))
+        @if(($todos->count()) == 0)
+            You have no tasks.
+            Add some and get productive!
+        @endif
         @foreach($todos as $todo)
             <div class="flex justify-between mb-2 rounded bg-gradient-to-r from-sky-800 to-transparent border-slate-700 border truncate">
                 <div class="py-1 px-1 "> {{ $todo->deadline }} | {{ $todo->task }} </div>
@@ -49,5 +50,6 @@
     @else
         <div> DATABASE CONNECTION ERROR! <br> {{ print($dberror->getMessage())}}</div>
     @endif
+
 
 @endsection
