@@ -20,3 +20,5 @@ Route::get('/', [TodoController::class,'index'])->name('index');
 Route::post('/itemprocess', [TodoController::class,'save_todo'])->name('todoProc');
 
 Route::get('/tickitem/{id}',[TodoController::class,'tick_todo'])->name('todoTick');
+
+Route::get('dropitem/{id}',[TodoController::class,'drop_todo'])->name('todoDrop');
