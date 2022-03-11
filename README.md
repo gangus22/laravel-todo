@@ -22,7 +22,7 @@ I've also provided a migration file for the database schema, for use with ``php 
 
 ## After adding some tasks, it should look something like this:
 
-![image](https://user-images.githubusercontent.com/80174357/157541366-23fc9e38-8e9f-41fe-b45b-8062e54dc960.png)
+![image](https://user-images.githubusercontent.com/80174357/157830985-0d295cee-76c7-44b7-b3ee-5bb87ea876ab.png)
 
 Usage is self explanatory; enter a task you're planning on doing, then give it a deadline. 
 
