@@ -33,4 +33,4 @@ Upon adding a task, it will get added to the database, and then appear on the li
 To mark a task done, simply click its green button, which will update the task in the database.
 
 ## Things planned
-- Task remove button
+- Site message / notification upon adding or deleting a new task
